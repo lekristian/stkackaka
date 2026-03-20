@@ -1,26 +1,30 @@
-stkacka/
-│
+## 📁 Project Structure
+
+```
+vehicle-tracker/
+
 ├── apps/
-│   ├── mobile/              # Expo (React Native)
-│   └── backend/             # FastAPI (API layer)
-│
+│   ├── mobile/            # Expo (React Native) app
+│   └── backend/           # FastAPI API
+
 ├── services/
-│   ├── worker/              # Temporal worker
-│   └── scraper/             # scraping logic (optional split)
-│
-├── packages/                # shared veci (optional early)
-│   ├── types/               # TS types (mobile)
-│   └── utils/               # shared utils
-│
+│   ├── worker/            # Background jobs
+│   └── scraper/           # Data scraping
+
+├── packages/
+│   ├── types/             # Shared types
+│   └── utils/             # Utilities
+
 ├── infra/
 │   ├── docker/
 │   │   └── docker-compose.yml
-│   ├── k8s/                 # neskôr
-│   └── terraform/           # neskôr
-│
+│   ├── k8s/
+│   └── terraform/
+
 ├── .github/
-│   └── workflows/           # CI/CD
-│
+│   └── workflows/
+
 ├── .env
 ├── Makefile
 └── README.md
+```
