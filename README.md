@@ -1,30 +1,29 @@
 ## 📁 Project Structure
 
 ```
-vehicle-tracker/
+stkacka/
 
-├── apps/
-│   ├── mobile/            # Expo (React Native) app
-│   └── backend/           # FastAPI API
+├── apps/                  # Main applications
+│   ├── mobile/            # 📱 Expo (React Native) app
+│   └── backend/           # ⚙️ FastAPI API
 
-├── services/
-│   ├── worker/            # Background jobs
-│   └── scraper/           # Data scraping
+├── services/              # Background & data processing
+│   ├── worker/            # 🔄 Temporal worker (jobs, scheduling)
+│   └── scraper/           # 🕷️ External data scraping
 
-├── packages/
-│   ├── types/             # Shared types
-│   └── utils/             # Utilities
+├── packages/              # Shared code
+│   ├── types/             # 🧾 TypeScript types
+│   └── utils/             # 🛠️ Utilities
 
-├── infra/
-│   ├── docker/
+├── infra/                 # Infrastructure & deployment
+│   ├── docker/            # 🐳 Local development
 │   │   └── docker-compose.yml
-│   ├── k8s/
-│   └── terraform/
+│   ├── k8s/               # ☸️ Kubernetes (future)
+│   └── terraform/         # 🌍 IaC (future)
 
-├── .github/
-│   └── workflows/
+├── .github/workflows/     # 🤖 CI/CD pipelines
 
-├── .env
-├── Makefile
+├── .env                   # 🔐 Environment variables
+├── Makefile               # ⚡ Dev commands
 └── README.md
 ```
